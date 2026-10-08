@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Run</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="label">Score</div>
+        <div id="score" class="value">0</div>
+        <div class="label">Best</div>
+        <div id="best" class="value">0</div>
+      </div>
+
+      <canvas id="gameCanvas" width="900" height="600" aria-label="Temple Run game"></canvas>
+
+      <div id="gameOverlay" class="overlay visible">
+        <div class="panel">
+          <h1 id="overlayTitle">Temple Run</h1>
+          <p id="overlaySubtitle">Press Space or tap Start to begin</p>
+          <button id="startButton">Start</button>
+        </div>
+      </div>
+
+      <div class="touch-controls" aria-label="Touch controls">
+        <button class="control-btn" data-action="left">◀</button>
+        <button class="control-btn" data-action="jump">▲</button>
+        <button class="control-btn" data-action="right">▶</button>
+        <button class="control-btn" data-action="slide">▼</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
